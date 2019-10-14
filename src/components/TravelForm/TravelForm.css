@@ -1,0 +1,43 @@
+
+
+.TravelForm .form-control{
+	background-color: #4C9533;
+	border: none;
+	color: white;
+	height: 30px;
+	max-width: 300px;
+	font-weight: 300;
+	font-family: 'Helvetica', sans-serif;
+}
+
+.TravelForm {
+	display: flex;
+	flex-flow: column nowrap;
+}
+.TravelForm .form-control::placeholder{
+	color: white;
+}
+
+.TravelFormInput {
+	display: flex;
+	align-items: center;
+}
+
+.TravelForm .form-group div i {
+	padding-right: 3%;
+}
+
+.TravelForm button.btn-primary {
+	padding: .45rem 1rem;
+	background-color: #4C9533;
+	border: none;
+	align-self: flex-end;
+}
+
+.TravelForm button.btn-primary:hover {
+	background-color: #305E20;
+}
+
+.TravelForm .inputIcon {
+	min-width: 35px;
+}

@@ -1,0 +1,26 @@
+.header{
+	font-family: 'Overpass', sans-serif;
+	color: #8cc63b;
+	margin-bottom: 5vh;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+	font-size: 1.2rem;
+	color: #8cc63b;
+}
+
+.header h2{
+	color: #4C9533;
+	font-size: 1.4rem;
+}
+
+.header h3 {
+	font-size: 1.1rem;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.headerNavBar{
+	max-width: 40vw;
+}

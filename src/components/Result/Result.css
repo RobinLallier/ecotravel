@@ -1,0 +1,46 @@
+.result{
+	margin: 3% auto;
+	padding: 5% 7%;
+	background-color: #4C9533;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.resultBest{
+	font-family: 'Overpass';
+}
+
+.resultIcon{
+	font-size: 4rem;
+	padding-right: 10%;
+}
+
+.resultContent{
+	width: 100%;
+}
+.resultName{
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.resultScores{
+	display: flex;
+	justify-content: space-between;
+}
+.resultScores h3{
+	font-size:.9rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.resultScore {
+	display: flex;
+	align-items: center;
+	font-size: .8rem;
+}
+
+.resultScore i {
+	font-size: 1.5rem;
+	margin-right: 7%;
+}

@@ -1,0 +1,13 @@
+.AppMain {
+  min-height: 100vh;
+}
+
+.mainContainer {
+	width: 70vw;
+	margin: auto;
+	background-color: #8cc63b;
+	color: white;
+	padding: 2% 5%;
+	font-size: 1.2rem;
+	border-radius: 16px;
+}
