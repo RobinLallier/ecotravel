@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dotk/static/css/main.95901566.chunk.css",
-    "main.js": "/dotk/static/js/main.a703329f.chunk.js",
-    "main.js.map": "/dotk/static/js/main.a703329f.chunk.js.map",
-    "runtime~main.js": "/dotk/static/js/runtime~main.f71c18ce.js",
-    "runtime~main.js.map": "/dotk/static/js/runtime~main.f71c18ce.js.map",
-    "static/css/2.c7bb94bc.chunk.css": "/dotk/static/css/2.c7bb94bc.chunk.css",
-    "static/js/2.9c036239.chunk.js": "/dotk/static/js/2.9c036239.chunk.js",
-    "static/js/2.9c036239.chunk.js.map": "/dotk/static/js/2.9c036239.chunk.js.map",
-    "index.html": "/dotk/index.html",
-    "precache-manifest.7f6fa4ec9aced958d0003c07bfcc250e.js": "/dotk/precache-manifest.7f6fa4ec9aced958d0003c07bfcc250e.js",
-    "service-worker.js": "/dotk/service-worker.js",
-    "static/css/2.c7bb94bc.chunk.css.map": "/dotk/static/css/2.c7bb94bc.chunk.css.map",
-    "static/css/main.95901566.chunk.css.map": "/dotk/static/css/main.95901566.chunk.css.map",
-    "static/media/logo.png": "/dotk/static/media/logo.e807a668.png"
+    "main.css": "/ecotravel/static/css/main.95901566.chunk.css",
+    "main.js": "/ecotravel/static/js/main.a703329f.chunk.js",
+    "main.js.map": "/ecotravel/static/js/main.a703329f.chunk.js.map",
+    "runtime~main.js": "/ecotravel/static/js/runtime~main.45ed395d.js",
+    "runtime~main.js.map": "/ecotravel/static/js/runtime~main.45ed395d.js.map",
+    "static/css/2.c7bb94bc.chunk.css": "/ecotravel/static/css/2.c7bb94bc.chunk.css",
+    "static/js/2.9c036239.chunk.js": "/ecotravel/static/js/2.9c036239.chunk.js",
+    "static/js/2.9c036239.chunk.js.map": "/ecotravel/static/js/2.9c036239.chunk.js.map",
+    "index.html": "/ecotravel/index.html",
+    "precache-manifest.b90e6294cd022259e7bd0814bf6f430e.js": "/ecotravel/precache-manifest.b90e6294cd022259e7bd0814bf6f430e.js",
+    "service-worker.js": "/ecotravel/service-worker.js",
+    "static/css/2.c7bb94bc.chunk.css.map": "/ecotravel/static/css/2.c7bb94bc.chunk.css.map",
+    "static/css/main.95901566.chunk.css.map": "/ecotravel/static/css/main.95901566.chunk.css.map",
+    "static/media/logo.png": "/ecotravel/static/media/logo.e807a668.png"
   }
 }
