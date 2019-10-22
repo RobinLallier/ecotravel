@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d955dbbd678be1391a1ba3a6a3d90ca",
+    "revision": "3204874e200aa8c14579a6eed630d8c3",
     "url": "/ecotravel/index.html"
   },
   {
-    "revision": "7d13e8b4a806763ad9fe",
+    "revision": "c01e5ffaf2f92734202a",
     "url": "/ecotravel/static/css/2.c7bb94bc.chunk.css"
   },
   {
-    "revision": "6c254f04aaf39798af8b",
+    "revision": "b9e16b3b00f8e0e39d5b",
     "url": "/ecotravel/static/css/main.84d500d6.chunk.css"
   },
   {
-    "revision": "7d13e8b4a806763ad9fe",
-    "url": "/ecotravel/static/js/2.be492edb.chunk.js"
+    "revision": "c01e5ffaf2f92734202a",
+    "url": "/ecotravel/static/js/2.d23274eb.chunk.js"
   },
   {
-    "revision": "6c254f04aaf39798af8b",
-    "url": "/ecotravel/static/js/main.67c921d9.chunk.js"
+    "revision": "b9e16b3b00f8e0e39d5b",
+    "url": "/ecotravel/static/js/main.89157234.chunk.js"
   },
   {
     "revision": "a9799f69292bef596140",
