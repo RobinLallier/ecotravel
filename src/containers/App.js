@@ -38,14 +38,12 @@ class App extends Component {
     let vehicle = JSON.stringify(this.state.vehicle);
 
     let url = `https://gentle-plains-26891.herokuapp.com/traitement?origin=${origin}&destination=${destination}&date=${date}&vehicle=${vehicle}`;
-    console.log(url);
 
     let results = await fetch(url)
       .then(function(data) {
         return data.json();
       })
       .then(function(data) {
-        console.log(data);
         for(let result of data.results){
           result.duration = moment.duration(result.duration);
         }
@@ -54,7 +52,7 @@ class App extends Component {
       .catch(function(err) {
         console.log(err);
         this.setState({isSearchingResults: false, serverError: true});
-    }); 
+      }.bind(this)); 
     this.setState({
         results: results.results,
         apiUrls: results.apiUrls,
