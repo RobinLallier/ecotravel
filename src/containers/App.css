@@ -4,10 +4,29 @@
 
 .mainContainer {
 	width: 70vw;
+	min-height: 60vh;
 	margin: auto;
 	background-color: #8cc63b;
 	color: white;
 	padding: 2% 5%;
 	font-size: 1.2rem;
 	border-radius: 16px;
+}
+
+.loadingScreen{
+	margin: 2rem auto;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.serverError{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.serverError img{
+	max-width: 240px;
 }

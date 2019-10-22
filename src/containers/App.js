@@ -4,6 +4,7 @@ import moment from 'moment';
 
 import './App.css';
 import Header from '../components/Header/Header';
+import serverImage from '../images/serverError.png';
 import TravelForm from '../components/TravelForm/TravelForm';
 import TravelResults from '../components/TravelResults/TravelResults';
 
@@ -19,7 +20,8 @@ class App extends Component {
       results : [],
       apiUrls: {},
       isSearchingResults : false,
-      errors : []
+      errors : [],
+      serverError: false
     }
   }
 
@@ -32,9 +34,11 @@ class App extends Component {
     this.setState({isSearchingResults: true});
     let origin = this.state.origin.split(',')[0];
     let destination = this.state.destination.split(',')[0];
-    let date = this.state.date;
+    let date = moment(this.state.date).toISOString(true);
     let vehicle = JSON.stringify(this.state.vehicle);
+
     let url = `https://gentle-plains-26891.herokuapp.com/traitement?origin=${origin}&destination=${destination}&date=${date}&vehicle=${vehicle}`;
+    console.log(url);
 
     let results = await fetch(url)
       .then(function(data) {
@@ -49,6 +53,7 @@ class App extends Component {
       })
       .catch(function(err) {
         console.log(err);
+        this.setState({isSearchingResults: false, serverError: true});
     }); 
     this.setState({
         results: results.results,
@@ -59,19 +64,35 @@ class App extends Component {
   }
 
   render(){
-    const {results, date, errors, isSearchingResults, apiUrls} = this.state;
-    //Affiche un Loader pendant le chargement des résultats
+    const {results, date, errors, isSearchingResults, apiUrls, serverError} = this.state;
     
     const mainContent = () => {
-      if ( results.length === 0 && isSearchingResults ){
+      if ( results.length === 0 && isSearchingResults && !serverError){
         return (
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
+          <div class="loadingScreen">
+            <Spinner animation="border" role="status">
+              <span className="sr-only">Loading...</span>
+            </Spinner>
+            <article>
+              <h2>Votre recherche est en cours...</h2>
+              <p>Nous sommes en train d'interroger les services de transports associés à votre recherche. Merci de votre patience!</p>
+            </article>
+          </div>
         );
-      } else if (results.length > 0 && !isSearchingResults){
+      } else if (results.length > 0 && !isSearchingResults && !serverError){
         return (
           <TravelResults errors={errors} results={results} apiUrls={apiUrls}/>
+        );
+      } else if (serverError){
+        return(
+          <div class="serverError">
+            <img src={serverImage} alt='Server Error'/>
+            <article> 
+              <h2>Le serveur ne répond pas (request timeout)</h2>
+              <p>Nous sommes désolé, le serveur n'a pas renvoyé de réponse. Vous pouvez envoyer un email à robin.lallier29@gmail.com et je tâcherais de résoudre ce bug!
+              </p>
+            </article>
+          </div>
         );
       } else {
         return <TravelForm onFormChange={this.onFormChange} date={date} searchSubmit={this.onSearchSubmit}/>
@@ -85,7 +106,6 @@ class App extends Component {
           <div className='mainContainer'>
             {mainContent()}
           </div>  
-            }
         </div>  
       </div>
     );

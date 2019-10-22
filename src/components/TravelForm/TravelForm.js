@@ -46,10 +46,7 @@ class TravelForm extends Component {
 		          marque:  results.records[0].fields.marque,
 		          consoMixte100Km: results.records[0].fields.consommation_mixte_l_100km,
 		          carburant: results.records[0].fields.carburant,
-		          particules: results.records[0].fields.particules_g_km,
-		          co2: results.records[0].fields.co2_g_km,
-		          hydrocarbones: results.records[0].fields.hc_nox_g_km,
-		          no2: results.records[0].fields.nox_g_km
+		          co2: results.records[0].fields.co2_g_km
 		        };
 	        	this.onFormChange('vehicle', vehicle);
 	      	}
